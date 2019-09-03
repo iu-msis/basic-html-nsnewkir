@@ -33,6 +33,88 @@
       </nav>
     </div>
   </header>
-</div>
+  </div>
+
+  <div class="container">
+  <main>
+    <h2> Table of Books </h2>
+    <div class="table-responsive">
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Year Published</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Page Count</th>
+        <th scope="col">MSRP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Blood Sweat and Pixels</th>
+        <td>Jason Schreier</td>
+        <td>2017</td>
+        <td>Harper Paperbacks</td>
+        <td>304</td>
+        <td>$10.98</td>
+      </tr>
+      <tr>
+        <th scope="row">Masters of Doom</th>
+        <td>David Kushner</td>
+        <td>2004</td>
+        <td>Random House Trade Paperbacks</td>
+        <td>368</td>
+        <td>$13.60</td>
+      </tr>
+      <tr>
+        <th scope="row">Console Wars</th>
+        <td>Blake J. Harris</td>
+        <td>2015</td>
+        <td>Dey Street Books</td>
+        <td>576</td>
+        <td>$10.94</td>
+      </tr>
+      <tr>
+        <th scope="row">The Ultimate History of Video Games</th>
+        <td>Steven L. Kent</td>
+        <td>2001</td>
+        <td>Three Rivers Press</td>
+        <td>624</td>
+        <td>$17.60</td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    <h2>Add New Record</h2>
+    <form>
+      <div class="form-group">
+        <label for="Input1">Book Title</label>
+        <input type="text" class="form-control" id="Input1" placeholder="Enter Book Title">
+      </div>
+      <div class="form-group">
+        <label for="Input2">Author</label>
+        <input type="text" class="form-control" id="Input2" placeholder="Enter Author Name">
+      </div>
+      <div class="form-group">
+        <label for="Input3">Release Date</label>
+        <input type="number" class="form-control" id="Input3" placeholder="Enter Book Release Date">
+      </div>
+      <div class="form-group">
+        <label for="Input4">Publisher</label>
+        <input type="text" class="form-control" id="Input4" placeholder="Enter Publisher Name">
+      </div>
+      <div class="form-group">
+        <label for="Input5">Page Count</label>
+        <input type="number" class="form-control" id="Input5" placeholder="Enter Number of Pages">
+      </div>
+      <div class="form-group">
+        <label for="Input6">MSRP</label>
+        <input type="number" class="form-control" id="Input6" placeholder="Enter MSRP">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </main>
+  </div>
 </body>
 </html>
