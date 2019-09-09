@@ -39,7 +39,7 @@
   <main>
     <h2> Table of Books </h2>
     <div class="table-responsive">
-    <table class="table table-striped">
+    <table id = "tableBooks" class="table table-striped">
     <thead>
       <tr>
         <th scope="col">Title</th>
@@ -119,12 +119,12 @@
 
   <script src='tablesort.min.js'></script>
 
-<!-- Table Sort From: http://tristen.ca/tablesort/demo/-->
+<!-- Table Sort and CSS From: http://tristen.ca/tablesort/demo/-->
 <script src='tablesort.number.js'></script>
 <script src='tablesort.date.js'></script>
 
 <script>
-  new Tablesort(document.getElementById('table-id'));
+  new Tablesort(document.getElementById('tableBooks'));
 </script>
 
 </body>
