@@ -35,17 +35,28 @@
   </header>
   </div>
 
-  <div class="container">
+
   <main>
-    <h2>Mario</h2>
-    <br>
-    <a href="img/mario-user-image.png">
-    <img class="img-fluid img-thumbnail" src="img/mario-user-image.png" id="MarioUserImg"></a>
-    <p>Image Source: Nintendo of America Twitter via Google Images</p>
-    <p>Country: Italy</p>
-    <p>Birthdate: 1981</p>
-    <p>Age: 38 </p>
-    <p>Email: <a href="mailto:mario64@nintendo.com">mario64@nintendo.com</a></p>
+    <!-- I worked with Anson Lam, Lindsey Chastain, Riley McGrath, and Brian Emmons -->
+    <div class="container">
+    <div class="row">
+      <div id="userRandomApp">
+        <div>
+          <a v-bind:href="person.picture.large">
+          <img class="img-fluid img-thumbnail" v-bind:src="person.picture.medium" id="UserImg"></a>
+          <p>First Name: <span>{{person.name.first}}</span></p>
+          <p>Last Name: <span>{{person.name.last}}</span></p>
+          <p>Birth Date: <span>{{person.dob.date}}</span></p>
+          <p>Age: <span>{{person.dob.age}}</span></p>
+          <p>Country: <span>{{person.nat}}</span></p>
+          <p>Email:<a v-bind:href="'mailto:'+person.email" target="_blank"> {{person.email}}</a></p>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/user.app.js"></script>
+
   </main>
   </div>
 </body>
