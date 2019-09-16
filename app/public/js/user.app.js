@@ -52,7 +52,7 @@ var userApp = new Vue({
               "medium": "",
               "thumbnail": ""
             },
-            "nat": "NO"
+            "nat": ""
     }
 },
   methods: {
